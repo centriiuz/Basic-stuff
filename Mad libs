@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char name1[20];
+    char name2[20];
+    char thing[20];
+    int age;
+
+    printf("Enter a name: \n");
+    scanf("%s%s", &name1, name2);
+    printf("What thing do you want?\n");
+    scanf("%s", &thing);
+    printf("what age do you want?\n");
+    scanf("%d", &age);
+    printf("I wish %s %s\n", name1, name2);
+    printf("had better %s\n", thing);
+    printf("with your %d birthday.\n", age);
+
+    return 0;
+}
