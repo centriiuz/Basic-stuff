@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int age;
+    char next[20];
+    printf("How old are you?\n");
+    scanf("%d", &age);
+    printf("you look to young to be %d years old\n", age);
+    scanf("%lf\n", next);
+    printf("No problem.\n");
+    return 0;
+}
