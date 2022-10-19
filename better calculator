@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+// Building a better calculator.
+
+int main ()
+{
+//This is where the numbers are going to be stored
+    double num1;
+    double num2;
+    char op;
+//This is to get the input from the user
+    printf("Enter a number: ");
+    scanf("%lf", &num1);
+    printf("Enter operator: ");
+//op is storing the + - / * signs note that %c has a space before the percent sign.
+    scanf(" %c", &op);
+    printf("Enter a number: ");
+    scanf("%lf", &num2);
+//This is where the operations are calculated
+//each sign has been made to multiply or divide manually.
+    if(op == '+') {
+        printf("%f", num1 + num2);
+    } else if (op == '-'){
+        printf("%f", num1 - num2);
+    } else if (op == '/'){
+        printf("%f", num1 / num2);
+    } else if (op == '*'){
+        printf("%f", num1 * num2);
+    } else {
+        printf("Invalid Operator.");
+    }
+    return 0;
+}
